@@ -105,3 +105,110 @@ else if (hariHari === "Sabtu") {
 else {
     console.log("Selain Senin Dan Sabtu")
 };
+
+// Belajar If Nested
+// let email = prompt("Masukan Email Anda");
+
+// if(email.length >= 8) {
+//     if(email.indexOf("@") !== -1){
+//         console.log("Email Valid")
+//     }else{
+//         console.log("Tidak Ada Symbol @")
+//     }
+// }else {
+//     console.log("Email Belum Valid")
+// };
+
+// Belajar if Tanpa @
+let password = "rezaprtma391 @43"
+
+if(password.indexOf('@') !== -1){
+    console.log("true")
+}else {
+    console.log("false")
+}
+
+//Belajar And
+let gender = "male"
+let price = 10.000
+
+if(gender === "male" && price >= 5.000){
+    console.log("Anda Mendapatkan Diskon")
+}
+
+// Belajar Or
+
+let usia = 19;
+if (usia === 19 || usia === 20){
+    console.log("Anda Bisa Menikah")
+} else {
+    console.log("Anda Belum Bisa Menikah")
+}
+
+// Belajar Not
+let user = "admin";
+if (user !== "admin") {
+    console.log("akses ditolak")
+}else {
+    console.log("akses diterima")
+}
+
+// Belajar Switch Case
+let buah = "mangga"
+
+switch(buah){
+    case "apel":
+        console.log("Buah Apel")
+    break;
+    case "stroberi":
+        console.log("Buah Stroberi");
+    break;
+    case "mangga":
+        console.log("Buah Mangga");
+    break;
+    default:
+        console.log("Enjoy!")
+};
+
+let hari = 1;
+
+switch(hari){
+    case 1:
+        console.log("Ini Adalah Hari Senin")
+        break;
+    case 2:
+        console.log("Ini Adalah Hari Selasa")
+        break;
+    case 3:
+        console.log("Ini Adalah Hari Rabu")
+        break;
+    case 4:
+        console.log("Ini Adalah Hari Kamis")
+        break;
+    case 5:
+        console.log("Ini Adalah Hari Jumat")
+        break;
+    case 6:
+        console.log("Ini Adalah Hari Sabtu")
+        break;
+    case 7:
+        console.log("Ini Adalah Hari Minggu")
+        break;
+    default:
+        console.log("Tidak Ada Lagi!!!!")
+}
+
+//Belajar Array
+
+//Array Kosong
+let kosong =[];
+kosong = [true, "string,", 1, null]
+console.log(kosong);
+
+// Array String
+let carBrand = ["Toyota", "Honda", "Daihatsu"];
+console.log(carBrand);
+
+// Array Number
+let angkaArray = [1,2,3,4,5,6];
+console.log(angkaArray);
