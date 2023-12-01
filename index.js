@@ -212,3 +212,64 @@ console.log(carBrand);
 // Array Number
 let angkaArray = [1,2,3,4,5,6];
 console.log(angkaArray);
+
+// Mengganti Isi Array
+let merkMotor = [1, "Honda", "Yamaha"];
+merkMotor[0] = "Yamaha"; // Mengubah index array 0 
+merkMotor[2] = 1; // Mengubah index array 2
+merkMotor[5] = "Suzuki"
+console.log(merkMotor)
+
+// Push Menambahkan item array mulai dari akhir
+// Pop Menghapus item arrat mulai dari akhir
+// Array Method Push And Pop
+let Alphabet = ["A","B","C","D"];
+Alphabet.push("E", "F", "G", "H", "I"); // Menambahkan data ke array
+console.log(Alphabet);
+
+console.log(Alphabet.pop()) // Menghapus data array yang paling terakhir
+console.log(Alphabet)
+
+
+
+
+// Unshift Menambahkan item array mulai dari depan
+// Shift menghapus item array mulai dari depan
+//Array Method Unshift dan Shift
+let siswa = ["Babi","Camdan","Devi","Eman"];
+console.log(siswa);
+siswa.unshift("Alif"); // Menambahkan Item array dari depan
+console.log(siswa);
+siswa.shift() // Menghapus item array dari depan
+console.log(siswa)
+
+// Array Method Concat
+let array1 = ["a","b","c"];
+let array2 = ["e","f","g"];
+let array3 = array1.concat(array2);
+console.log(array3)
+
+// Array Method indexOf
+console.log(array3.indexOf("e")); // Mencari Nilai Index Array
+console.log(array3[3]) // mencari nilai nilai array melalui index
+// Array Method Include
+console.log(array3.includes("e")) // NgeCek Apakah Ada Nilai tersebut
+console.log(array3.includes("z")) // same
+
+// Array Method Sort
+let arrSort = [9,8,7,6,5,4,3,2,1]; // Sort Dimulai dari paling huruf/angka paling depan
+console.log(arrSort.sort());
+
+// Array Method Splice
+const months = ['Jan', 'March', 'April', 'June', 'July'];
+months.splice(0, 1, "Feb")
+console.log(months)
+
+// Array Method slice
+let fruits = ["Apple", "Orange", "Banana", "Kiwi", "Strawberry"]
+console.log(fruits.slice(0,3)) // Mencopy Data Dari Index Ke-0 hingga Index Ke-2
+console.log(fruits.slice(2,-1))
+
+// Array Method Join
+let animals = ["Cat", "Dog", "Elephant"];
+console.log(animals.join(" ")); // gabung data array dan ditambah symbol dll
