@@ -273,3 +273,73 @@ console.log(fruits.slice(2,-1))
 // Array Method Join
 let animals = ["Cat", "Dog", "Elephant"];
 console.log(animals.join(" ")); // gabung data array dan ditambah symbol dll
+
+// Const dan Array
+const Warna = ["Merah","Hijau","Biru"];
+Warna.push("Putih");
+//Warna = {warna: "hijau"} // Ini tidak Bisa
+console.log(Warna)
+
+// Nested Array
+let warna = [ 
+    ["Merah", null, true],
+    ["Hijau", null, false],
+    ["Abu-Abu", null, true]
+];
+warna.unshift("biru", null, true)
+warna.push("jingga", null, false)
+console.log(warna)  //  [
+                    //     'biru',
+                    //     null,
+                    //     true,
+                    //     [ 'Merah', null, true ],
+                    //     [ 'Hijau', null, false ],
+                    //     [ 'Abu-Abu', null, true ],
+                    //     'jingga',
+                    //     null,
+                    //     false
+                    //   ]
+console.log(warna[3][0]) // Ambil Index Didalam array dan didalam array lagi
+
+// Belajar Object
+let orang = {
+    nama  : "Muhamad Reza Pratama",
+    "umur" : 19
+}
+console.log(orang["nama"]) // Panggil Dengan []
+console.log(orang.nama) // Panggil Dengan .
+// Ubah data Object
+orang.umur = 20 // Ubah Data Dengan .
+orang["umur"] = 21 // Ubah Data Dengan Index
+let umur = orang["umur"] // Ubah data dengan membuat variabel baru
+console.log(umur)
+console.log(orang.umur)
+//tambah properti didalam object
+orang.pekerjaan = "software engineering" // tambah properti
+orang["Hoby"] = "Ngoding" // tambah properti
+console.log(orang)
+console.log(orang.pekerjaan)
+console.log(orang["Hoby"])
+// Object Didalam Array
+let buah1 = ["apel", "nanas", "mangga", {
+    pemilik: "Reza"
+}]
+console.log(buah1[3].pemilik) // Panggil Object diDalam array
+
+// Array Didalam Object
+let sepatu = {
+    nama: "Reza",
+    "alamat": "Pamulang",
+    umur: 19,
+    isReady: true,
+    ukuran: [38,39,40,41,42],
+    location: { 
+    indonesia: 48,
+    malaysia: 50
+    }
+}
+
+console.log(sepatu.isReady)
+console.log(sepatu.alamat)
+console.log(sepatu.ukuran)
+console.log(sepatu.ukuran[2]) // Panggil array didalam object

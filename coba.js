@@ -63,9 +63,11 @@
 //     console.log("Email Belum Valid")
 // }
 
-let message = "Belajar DOM";
+let msg = "Ini Adalah DOM";
+let content = "Halo Guys Welcome Back Ini Adalah Sesi Belajar Tentang DOM, Disini Saya Akan Belajar DOM dan Mengimplementasikannya!"
 
-document.querySelector("#header").innerHTML = message;
+document.querySelector("#header").innerHTML = msg;
+document.querySelector("#content").innerHTML = content;
 
 //Belajar Logika And
 // let password = prompt("Masukan Password Anda!");
