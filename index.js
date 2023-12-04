@@ -343,3 +343,140 @@ console.log(sepatu.isReady)
 console.log(sepatu.alamat)
 console.log(sepatu.ukuran)
 console.log(sepatu.ukuran[2]) // Panggil array didalam object
+
+// Loop
+for(let i = 0; i <= 10; i +=2){
+    console.log("loop bilangan genap",i)
+}
+
+for(let x = 0; x <= 18; x +=3){
+    console.log("Ini Adalah Loop",x)
+}
+
+// loop pengurangan
+for(let i = 30; i >= 0; i -= 2){
+    console.log("Loop Pengurangan",i)
+}
+
+//Lopp perkalian
+for(let i = 10; i <= 100000; i *= 10){
+    console.log("loop perkalian", i)
+}
+
+// for(let x = 20; x >= 0; x++){ Infinite loop
+//     console.log(x)
+// }
+
+// Loop Dengan Array
+let hewanBinatang = ["Zebra","Sapi","Kerbau","Kelinci"];
+for(let x = 0;x < hewanBinatang.length; x++){
+    console.log(`Hewan Binatang ke ${x}:`,hewanBinatang[x]);
+    // console.log(`Hewan Binatang ke ${x+1} :`,hewanBinatang[x]) 
+}
+
+// Nested Loop
+let string = "string"
+for(let x = 1;x <= 3; x++){
+    console.log("Outer :",x)
+    for(let y = 0; y < string.length; y++){
+        console.log("innernya :", string[y], "angkanya", y)
+    }
+};
+
+// Nested Loop Seperti pilihan Ganda
+let pg = "abcde"
+for(i=1; i <= 4;i++){
+    console.log("Nomor Soal", i)
+    for(j=0;j < pg.length; j++){
+        console.log(pg[j], "index length nya", j)
+    }
+}
+
+// Nested Array Dan Nested Loop
+// let pelajar = [
+//     ["Olivia", "Liam", "Emma", "Noah"],
+//     ["Amelia", "Oliver", "Ava", "Elijah"],
+//     ["Sophia", "Mateo", "Isabella", "Lucas"]
+// ];
+
+// for(let firstI = 0; firstI < pelajar.length; firstI++){
+//     console.log("Panjang Bangku #",firstI+1)
+//     let bangku = pelajar[firstI]
+//     for(let secondI = 0; secondI < bangku.length; secondI++){
+//         console.log("...................",`${bangku[secondI]} Dan Indexnya ${secondI}`)
+//     }
+// }
+
+// Loop For
+for(let y = 0; y < 2; y++){
+    console.log(y)
+} // output 0,1
+
+//Loop While
+let z = 0
+while(z < 2) {
+    console.log(z)
+    z++
+} // Output 0, 1
+
+// keyword Break; didalam for
+for(let y = 1; y < 1000; y+= 1){
+    console.log(y);
+    if(y === 100){
+        break;
+    }
+}
+
+// Array Loop Dengan For
+let arrayLoop = ['Dwi', 'Fikri', 'Rizki'];
+
+for(let i = 0; i < arrayLoop.length; i++){
+    console.log(`Nama ${arrayLoop[i]}`)
+}
+
+// MEnggunakan For OF
+for(let student of arrayLoop){
+    console.log(`Nama ${student}`)
+}
+
+//MEnggunakan For Of
+let pelajar = [
+    ["Olivia", "Liam", "Emma", "Noah"],
+    ["Amelia", "Oliver", "Ava", "Elijah"],
+    ["Sophia", "Mateo", "Isabella", "Lucas"]
+];
+
+// Menggunakan For Of
+for(dataSiswa of pelajar){
+    for(dataSiswa1 of dataSiswa){
+        console.log(dataSiswa1)
+    }
+}
+
+// Menggunakan For In
+let studentScore = {
+    Olivia: 20,
+    Liam: 13,
+    Emma: 40,
+    Noah: 18,
+    Amelia: 32,
+    Oliver: 10,
+    Ava: 11,
+    Elijah: 21,
+    Sophia: 14,
+    Mateo: 22
+}
+
+// For In
+// for(let student in studentScore){
+//     console.log(`${student} memiliki skor ${studentScore[student]}`)
+// }
+
+//Ubah Object values Ke array dan menggunakan for of
+let total = 0
+let scores = Object.values(studentScore)
+for (let score of scores){
+    total += score 
+}
+
+console.log(total / scores.length) // Nilai Rata Rata 20.1

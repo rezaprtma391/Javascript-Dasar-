@@ -79,13 +79,35 @@ document.querySelector("#content").innerHTML = content;
 // }
 
 //Belajar Logika Or
-let role = prompt("Masukan Role Anda").toLowerCase();
-if(role === "admin" || role === "spv") {
-    console.log("Akses Diterima")
-}else {
-    console.log("Akses Ditolak")
-}
+// let role = prompt("Masukan Role Anda").toLowerCase();
+// if(role === "admin" || role === "spv") {
+//     console.log("Akses Diterima")
+// }else {
+//     console.log("Akses Ditolak")
+// }
 
 //Array
-let carBrand = ["Toyota", "Honda", "Daihatsu"];
-console.log(carBrand);
+// let carBrand = ["Toyota", "Honda", "Daihatsu"];
+// console.log(carBrand);
+
+// While 
+// const password = "pass123"
+// let penyimpananPassword = prompt("Masukan Password Anda")
+// while(penyimpananPassword.toLowerCase() !== password){
+//     penyimpananPassword = prompt("Masukan Password Anda")
+// }
+// alert("Congrats")
+
+// KeyWord Break; Didalam while
+let wkwkwk = prompt("Masukan Kata Kata")
+while(true){
+    wkwkwk = prompt(wkwkwk)
+    if(wkwkwk.toLowerCase() === "stop") {
+        break;}
+    } 
+alert("Good")
+
+// keyword Break; didalam for
+// for(let y = 1; y < 1000; y+= 2){
+//     console.log(y)
+// }
