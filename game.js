@@ -20,7 +20,3 @@ while(parseInt(guess) !== targetNum) {
 }
 
 alert(`Selamat Tebakan Anda Benar, Dengan Percobaan ${percobaan} Kali`)
-
-
-
-
